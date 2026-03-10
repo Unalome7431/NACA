@@ -5,9 +5,11 @@ body {
   padding: 0;
 }
 
-@theme inline {
+@theme {
   --font-elsie: var(--font-elsie);
   --font-quicksand: var(--font-quicksand);
+
+  --breakpoint-hmd: 940px;
 }
 
 @custom-variant short (@media (max-height: 600px));
