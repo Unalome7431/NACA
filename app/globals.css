@@ -10,6 +10,7 @@ body {
   --font-quicksand: var(--font-quicksand);
 
   --breakpoint-hmd: 940px;
+  --breakpoint-hsm: 620px;
 }
 
 @custom-variant short (@media (max-height: 600px));

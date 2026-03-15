@@ -35,6 +35,29 @@ export default function NavBar() {
         })
       }
     })
+    ScrollTrigger.create({
+      start: 1800,
+      onEnter: () => {
+        gsap.to(navRef.current, {
+          color: '#FFFFFF',
+          duration: 0.7
+        }),
+        gsap.to('.bar', {
+          backgroundColor: '#FFFFFF',
+          duration: 0.01
+        })
+      },
+      onLeaveBack: () => {
+        gsap.to(navRef.current, {
+          color: '#768a20',
+          duration: 0.7
+        }),
+        gsap.to('.bar', {
+          backgroundColor: '#768a20',
+          duration: 0.01
+        })
+      }
+    })
   }, {scope: navRef})
 
   return (
