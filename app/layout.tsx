@@ -1,9 +1,27 @@
 import type { Metadata } from "next";
-import { Elsie, Quicksand } from "next/font/google";
+import { Elsie, Quicksand, Poiret_One, Bellota_Text, Lato } from "next/font/google";
 import "./globals.css";
 
 const elsie = Elsie({
   variable: "--font-elsie",
+  subsets: ["latin"],
+  weight: "400"
+});
+
+const lato = Lato({
+  variable: "--font-lato",
+  subsets: ["latin"],
+  weight: "400"
+});
+
+const poiretOne = Poiret_One({
+  variable: "--font-poiret",
+  subsets: ["latin"],
+  weight: "400"
+});
+
+const bellotaText = Bellota_Text({
+  variable: "--font-bellota",
   subsets: ["latin"],
   weight: "400"
 });
@@ -26,7 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${elsie.variable} ${quicksand.variable} antialiased overflow-x-hidden`}
+        className={`${elsie.variable} ${quicksand.variable} ${poiretOne.variable} ${bellotaText.variable} ${lato.variable} antialiased overflow-x-hidden`}
       >
         {children}
       </body>

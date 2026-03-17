@@ -38,7 +38,7 @@ export default function Card({ className, variant, border, children, origin, tas
       {imgSrc && <Image src={imgSrc} alt="content" width={65} height={65} className="sps:hidden" />}
 
       <div className="flex flex-col">
-        <p className="font-quicksand text-[clamp(0.9rem,4vw,1.5rem)] text-lime-900 font-semibold">{children} </p>
+        <p className="font-lato text-[clamp(0.9rem,4vw,1.5rem)] text-lime-900 font-semibold">{children} </p>
         <hr />
         <div className="flex items-center my-2 not-sps:my-0 not-sps:mt-1 gap-2">
           <MapPin className="w-6 not-sps:w-4 self-start shrink-0 text-[#768a20]"/>

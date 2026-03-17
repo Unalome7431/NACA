@@ -8,6 +8,9 @@ body {
 @theme {
   --font-elsie: var(--font-elsie);
   --font-quicksand: var(--font-quicksand);
+  --font-poiret: var(--font-poiret);
+  --font-bellota: var(--font-bellota);
+  --font-lato: var(--font-lato);
 
   --breakpoint-hmd: 940px;
   --breakpoint-hsm: 620px;
