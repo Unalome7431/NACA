@@ -55,7 +55,7 @@ export default function BrandProfile({ buttonAvail, reverse, imgSrc, children }:
       {
         !isImg &&
         <div className="w-fit h-fit flex flex-col hsm:min-w-3xs">
-          <p className={`font-lato not-hsm:text-[clamp(1rem,1.7vw,2rem)] hsm:text-[clamp(1rem,2vw,2rem)] md:text-[clamp(1.3rem,1.4vw,1.8rem)] lg:text-[clamp(1.5rem,2vw,3rem)] not-hsm:text-center not-hsm:w-fit hsm:w-100 md:w-100 lg:w-200 ${reverse ? 'text-end' : 'text-start'}`}>
+          <p className={`font-lato not-hsm:text-[clamp(1.1rem,2vw,2rem)] hsm:text-[clamp(1rem,2vw,2rem)] md:text-[clamp(1.3rem,2vw,1.8rem)] lg:text-[clamp(1.5rem,2vw,3rem)] not-hsm:text-center not-hsm:w-fit hsm:w-100 md:w-100 lg:w-200 ${reverse ? 'text-end' : 'text-start'}`}>
             {children}
           </p>
           {
