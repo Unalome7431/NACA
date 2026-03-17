@@ -3,11 +3,11 @@ import { cn } from "../lib/utils";
 import Image from "next/image";
 
 const cardVariants = cva(
-  "",
+  "p-3 rounded-2xl flex gap-3",
   {
     variants: {
       variant: {
-        primary: "",
+        primary: "bg-gray-200",
         secondary: ""
       },
       border: {
@@ -26,12 +26,12 @@ interface CardProps extends React.ComponentProps<"div">, VariantProps<typeof car
   imgSrc?: string
 }
 
-export default function Card({ className, variant, border, imgSrc, ...props }: CardProps) {
+export default function Card({ className, variant, border, children, imgSrc, ...props }: CardProps) {
   return (
-    <div className={cn(cardVariants({ variant, border, className}))} {...props}>
-      {imgSrc && <Image src={imgSrc} alt="content" fill />}
+    <div className={cn(cardVariants({ variant, border, className}), "w-full md:w-110 lg:w-120")} {...props}>
+      {imgSrc && <Image src={imgSrc} alt="content" width={150} height={150} className="rounded-xl" />}
 
-      
+      <p>{children}</p>
     </div>
   )
 }

@@ -35,29 +35,6 @@ export default function NavBar() {
         })
       }
     })
-    ScrollTrigger.create({
-      start: 1800,
-      onEnter: () => {
-        gsap.to(navRef.current, {
-          color: '#FFFFFF',
-          duration: 0.7
-        }),
-        gsap.to('.bar', {
-          backgroundColor: '#FFFFFF',
-          duration: 0.01
-        })
-      },
-      onLeaveBack: () => {
-        gsap.to(navRef.current, {
-          color: '#768a20',
-          duration: 0.7
-        }),
-        gsap.to('.bar', {
-          backgroundColor: '#768a20',
-          duration: 0.01
-        })
-      }
-    })
   }, {scope: navRef})
 
   return (
@@ -66,7 +43,7 @@ export default function NavBar() {
 
       <div className="hidden flex-row gap-10 text-xl md:flex">
         <a href="/">About</a>
-        <a href="/">Partnership</a>
+        <a href="/">Specialty</a>
         <a href="/">FAQ</a>
         <a href="/">Contact</a>
       </div>
@@ -80,7 +57,7 @@ export default function NavBar() {
       <div className={`absolute w-screen h-[770px] rounded-[35vw] rounded-br-none bg-lime-950 -top-300 left-0 transition-transform duration-700 ease-in-out ${isOpen ? 'translate-y-170' : ''} md:hidden`}>
         <div className="flex flex-col text-end absolute right-10 bottom-6 gap-3">
           <a href="/">About</a>
-          <a href="/">Partnership</a>
+          <a href="/">Specialty</a>
           <a href="/">FAQ</a>
           <a href="/">Contact</a>
         </div>
