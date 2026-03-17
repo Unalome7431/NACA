@@ -37,7 +37,7 @@ export default function Home() {
       <div className="h-full w-full px-10 flex justify-center">
         <div className="flex not-md:flex-col gap-10 relative">
           <div className="md:sticky md:top-20 md:self-start">
-            <h1 className="text-5xl font-elsie text-[#768a20] mb-10 not-md:mb-0 not-md:text-center w-fit max-w-120 md:text-5xl">We offer a wide variety of ceremonial matcha
+            <h1 className="text-5xl font-elsie text-[#768a20] mb-10 not-md:mb-0 not-md:text-center w-fit max-w-120 md:text-5xl">Explore our diverse selection of matcha varieties
             </h1>
             <Button size="full" className="not-md:hidden md:w-60">
               Get yours now
