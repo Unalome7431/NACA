@@ -42,11 +42,11 @@ export default function Button({ className, position, variant, border, font, fon
   }
   return (
     <div className={cn(buttonVariants({border: border || "primary", size: size || "sixty", className}), position, "group relative h-fit flex justify-center items-center overflow-hidden border")}>
-      <div className="invisible flex gap-3 m-2 hsm:m-1 md:m-2 lg:m-3 md:text-[clamp(0.9rem,1.5vw,1.3rem)] hsm:text-[clamp(0.5rem,1.1vw,2rem)] not-hsm:text-[clamp(0.9rem,1.7vw,2rem)]">
+      <div className="invisible flex gap-3 m-2 hsm:m-1 md:m-2 lg:m-3 md:text-[clamp(0.9rem,1.5vw,1.3rem)] hsm:text-[clamp(0.7rem,1.1vw,2rem)] not-hsm:text-[clamp(0.9rem,1.7vw,2rem)]">
         {children}
         {icon && <span>{icon}</span>}
       </div>
-      <button className={cn(buttonVariants({fontColor: fontColor || "primary"}), font, "z-10 absolute flex gap-3 scale-95 group-hover:font-semibold group-hover:scale-100 group-active:scale-100 md:text-[clamp(0.9rem,1.5vw,1.3rem)] hsm:text-[clamp(0.5rem,1.1vw,2rem)] not-hsm:text-[clamp(0.9rem,1.7vw,2rem)]")} onClick={handleClick} {...props}>
+      <button className={cn(buttonVariants({fontColor: fontColor || "primary"}), font, "z-10 absolute flex gap-3 scale-95 group-hover:font-semibold group-hover:scale-100 group-active:scale-100 md:text-[clamp(0.9rem,1.5vw,1.3rem)] hsm:text-[clamp(0.7rem,1.1vw,2rem)] not-hsm:text-[clamp(0.9rem,1.7vw,2rem)]")} onClick={handleClick} {...props}>
         {children}
         {icon && <span>{icon}</span>}
       </button>

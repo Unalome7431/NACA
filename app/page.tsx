@@ -35,31 +35,31 @@ export default function Home() {
       </div>
 
       <div className="h-full w-full px-10 flex justify-center">
-        <div className="flex not-md:flex-col gap-10">
-          <div>
-            <h1 className="text-5xl font-elsie text-[#768a20] mb-10 not-md:mb-0 w-fit max-w-120 md:text-5xl">NACA comes with lot of varieties
+        <div className="flex not-md:flex-col gap-10 relative">
+          <div className="md:sticky md:top-20 md:self-start">
+            <h1 className="text-5xl font-elsie text-[#768a20] mb-10 not-md:mb-0 not-md:text-center w-fit max-w-120 md:text-5xl">Our matcha comes with lot of varieties
             </h1>
             <Button size="full" className="not-md:hidden md:w-60">
               Get yours now
             </Button>
           </div>
           <div className="flex flex-col gap-5">
-            <Card imgSrc="/matcha/gekko-no-shizuku.png">
-              Gekko-no-Shizuku
-            </Card>
-            <Card imgSrc="/matcha/hisui-no-homura.jpg">
-              Hisui-no-Homura
-            </Card>
-            <Card imgSrc="/matcha/kasumi-no-ato.png">
-              Kasumi-no-Ato
-            </Card>
-            <Card imgSrc="/matcha/komorobi-en.png">
-              Komorobi-en
-            </Card>
-            <Card imgSrc="/matcha/seifu-no-mori.jpg">
+            <Card imgSrc="/matcha/seifu-no-mori.jpg" origin="Uji, Kyoto" tasteProfile="Rich, Umami, Creamy">
               Seifu-no-Mori
             </Card>
-            <Button size="full" className="md:w-60">
+            <Card imgSrc="/matcha/hisui-no-homura.jpg" origin="Uji, Kyoto" tasteProfile="Nutty, Floral, Velvety">
+              Hisui-no-Homura
+            </Card>
+            <Card imgSrc="/matcha/gekko-no-shizuku.png" origin="Yame, Fukuoka" tasteProfile="Chocolatey, Earthy, Sweet">
+              Gekko-no-Shizuku
+            </Card>
+            <Card imgSrc="/matcha/kasumi-no-ato.png" origin="Uji, Kyoto" tasteProfile="Clean, Grassy, Crisp">
+              Kasumi-no-Ato
+            </Card>
+            <Card imgSrc="/matcha/komorobi-en.png" origin="Kagoshima, Kagoshima" tasteProfile="Balanced, Light, Refreshing">
+              Komorobi-en
+            </Card>
+            <Button size="full" className="md:hidden">
               Get yours now
             </Button>
           </div>

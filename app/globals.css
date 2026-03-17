@@ -11,6 +11,7 @@ body {
 
   --breakpoint-hmd: 940px;
   --breakpoint-hsm: 620px;
+  --breakpoint-sps: 350px;
 }
 
 @custom-variant short (@media (max-height: 600px));
