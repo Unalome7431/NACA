@@ -25,7 +25,7 @@ export default function Home() {
             <Image src='/NACA.png' alt="NACA" width={690} height={464} className="relative z-10 not-md:w-full not-md:h-auto object-contain md:object-cover"/>
           </div>
           <div className="w-fit flex flex-col hsm:min-w-3xs">
-            <p className="font-quicksand not-hsm:text-[clamp(0.9rem,1.7vw,2rem)] hsm:text-[clamp(0.6rem,1.5vw,2rem)] md:text-[clamp(0.7rem,1.4vw,1.5rem)] lg:text-[clamp(1rem,1.5vw,1.5rem)] text-justify">Born in the heart of Tangerang, our journey began not in a boardroom, but from a profound observation of the "modern rush"—the collective loss of stillness in our daily lives. To find the antidote, we traveled to the misty hills of Uji and Shizuoka, researching the ancient lineage of tea to bridge the gap between Japanese tradition and the Indonesian spirit. We built <span className="text-[#768a20] font-elsie">NACA</span> because we believe that in an increasingly chaotic world, the simple, focused act of whisking matcha serves as a secular prayer—a vibrant, emerald bridge back to mindfulness and internal clarity.</p>
+            <p className="font-quicksand not-hsm:text-[clamp(0.9rem,1.7vw,2rem)] hsm:text-[clamp(0.6rem,1.5vw,2rem)] md:text-[clamp(0.7rem,1.4vw,1.5rem)] lg:text-[clamp(1rem,1.5vw,1.5rem)] text-justify">Born in the heart of Tangerang, our journey began not in a boardroom, but from a profound observation of the "modern rush"—the collective loss of stillness in our daily lives. To find the antidote, we traveled to the misty hills of Uji and Fukuoka, researching the ancient lineage of tea to bridge the gap between Japanese tradition and the Indonesian spirit. We built <span className="text-[#768a20] font-elsie">NACA</span> because we believe that in an increasingly chaotic world, the simple, focused act of whisking matcha serves as a secular prayer—a vibrant, emerald bridge back to mindfulness and internal clarity.</p>
             <Button position="hsm:mt-auto mt-10 content-center" font="font-quicksand" className="hsm:w-40 md:w-60" size="full">
               Explore Our Specialty
             </Button>
@@ -37,7 +37,7 @@ export default function Home() {
       <div className="h-full w-full px-10 flex justify-center">
         <div className="flex not-md:flex-col gap-10 relative">
           <div className="md:sticky md:top-20 md:self-start">
-            <h1 className="text-5xl font-elsie text-[#768a20] mb-10 not-md:mb-0 not-md:text-center w-fit max-w-120 md:text-5xl">Our matcha comes with lot of varieties
+            <h1 className="text-5xl font-elsie text-[#768a20] mb-10 not-md:mb-0 not-md:text-center w-fit max-w-120 md:text-5xl">We offer a wide variety of ceremonial matcha
             </h1>
             <Button size="full" className="not-md:hidden md:w-60">
               Get yours now
