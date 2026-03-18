@@ -47,7 +47,7 @@ export default function PartnershipCarousel() {
   }
 
   return (
-    <div className="my-20 relative lg:mt-30">
+    <div className="m-20 relative lg:mt-30">
       <hr className="mb-5"/>
 
       <div className="absolute left-0 top-0 bottom-0 w-20 z-10 bg-linear-to-r from-white to-transparent pointer-events-none" />
