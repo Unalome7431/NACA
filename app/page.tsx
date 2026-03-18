@@ -4,6 +4,7 @@ import PartnershipCarousel from "./components/PartnershipCarousel";
 import BrandProfile from "./components/BrandProfile";
 import Button from "./components/Button";
 import Card from "./components/Card";
+import { Question, QuestionTitle, QuestionAnswer, QuestionGroup } from "./components/Question";
 
 export default function Home() {
 
@@ -61,6 +62,52 @@ export default function Home() {
             </Button>
           </div>
         </div>
+      </div>
+
+      <div className="h-full w-full px-10 mt-50 flex flex-col items-center">
+        <p className="font-elsie text-5xl text-[#768a20] mb-10">Frequently Asked Question</p>
+        <QuestionGroup>
+          <Question id="1">
+            <QuestionTitle >
+              Where exactly does NACA matcha come from?
+            </QuestionTitle>
+            <QuestionAnswer>
+              Our leaves are harvested from the misty, high-altitude hills of Uji, Fukuoka and Kagoshima, Japan. We partner with heritage tea estates that have perfected the art of shading and stone-milling for generations, ensuring every tin captures the "emerald bridge" we promise.
+            </QuestionAnswer>
+          </Question>
+          <Question id="2">
+            <QuestionTitle >
+              What makes your matcha "Ceremonial Grade"?
+            </QuestionTitle>
+            <QuestionAnswer>
+              "Ceremonial" refers to the highest quality of tea, intended to be enjoyed whisked with water alone. We use only the first harvest (shincha)—the youngest, most tender leaves from the top of the plant—resulting in a vibrant green color and a naturally sweet, umami-rich flavor with zero bitterness.
+            </QuestionAnswer>
+          </Question>
+          <Question id="3">
+            <QuestionTitle >
+              Do I really need a bamboo whisk (chasen)?
+            </QuestionTitle>
+            <QuestionAnswer>
+              While you can use a hand-held frother, a bamboo whisk is the traditional tool for a reason. Its 100 fine tines break up clumps and aerate the tea, creating that signature "creamy froth" that defines the <span className="font-elsie text-[#768a20]">NACA</span> experience.
+            </QuestionAnswer>
+          </Question>
+          <Question id="4">
+            <QuestionTitle >
+              Is it okay to add milk or sweeteners?
+            </QuestionTitle>
+            <QuestionAnswer>
+              While our ceremonial grade is designed to be sipped pure, we believe mindfulness is a personal journey. If a splash of oat milk or a touch of honey helps you find your "stillness," then by all means, enjoy it your way.
+            </QuestionAnswer>
+          </Question>
+          <Question id="5">
+            <QuestionTitle >
+              How much caffeine is in a serving?
+            </QuestionTitle>
+            <QuestionAnswer>
+              One bowl of <span className="font-elsie text-[#768a20]">NACA</span> matcha contains about 35-70mg of caffeine (roughly 1/3 of a cup of coffee). However, because of the high concentration of L-theanine, the energy is released slowly, providing "calm alertness" without the jittery crash of coffee.
+            </QuestionAnswer>
+          </Question>
+        </QuestionGroup>
       </div>
 
       <div className="h-screen w-full px-10 bg-[#768a20] shadow-[inset_0_300px_150px_-140px_rgba(256,256,256,1)]">
