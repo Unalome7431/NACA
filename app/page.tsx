@@ -19,18 +19,17 @@ export default function Home() {
       </div>
 
       <div className="h-full w-full px-10">
-        <BrandProfile buttonAvail={false} reverse={false} imgSrc="/NACA.png" />
-        <BrandProfile buttonAvail={false} reverse={true}>
+        <BrandProfile buttonAvail={false} reverse={true} imgSrc="/NACA.png">
           Born in the heart of Tangerang, our journey began not in a boardroom, but from a profound observation of the "modern rush"—the collective loss of stillness in our daily lives.
         </BrandProfile>
-        <BrandProfile buttonAvail={false} reverse={false} >
+        <BrandProfile buttonAvail={false} reverse={false} imgSrc="/tea-fields.jpg">
           To find the antidote, we traveled to the misty hills of Uji and Fukuoka, researching the ancient lineage of tea to bridge the gap between Japanese tradition and the Indonesian spirit.
         </BrandProfile>
-        <BrandProfile buttonAvail={false} reverse={true} >
+        <BrandProfile buttonAvail={false} reverse={true} imgSrc="/matcha-whisk.jpg">
           We built <span className="text-[#768a20] font-elsie">NACA</span> because we believe that in an increasingly chaotic world, the simple, focused act of whisking matcha serves as a secular prayer—a vibrant, emerald bridge back to mindfulness and internal clarity.
         </BrandProfile>
-        <PartnershipCarousel />
       </div>
+      <PartnershipCarousel />
 
       <div className="h-full w-full px-10 flex justify-center">
         <div className="flex not-md:flex-col gap-10 relative">
