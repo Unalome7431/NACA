@@ -137,7 +137,7 @@ export default function BrandProfile({ buttonAvail, reverse, imgSrc, children }:
         <div className="relative w-full h-full">
           {
             imgSrc &&
-            <Image src={imgSrc} alt="NACA" fill className="z-10 object-cover" sizes="(max-width: 768px) 100vw, 40vw"/>
+            <Image src={imgSrc} alt="NACA" fill className="z-10 object-cover" sizes="(max-width: 768px) 100vw, 40vw" priority/>
           }
         </div>
       </div>
