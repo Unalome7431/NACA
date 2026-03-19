@@ -42,11 +42,11 @@ export default function Card({ className, variant, border, children, origin, tas
         <hr />
         <div className="flex items-center my-2 not-sps:my-0 not-sps:mt-1 gap-2">
           <MapPin className="w-6 not-sps:w-4 self-start shrink-0 text-[#768a20]"/>
-          <p className="w-fit text-[clamp(0.7rem,3vw,1rem)]">{origin}</p>
+          <p className="w-fit text-[clamp(0.7rem,3vw,1rem)] font-lato">{origin}</p>
         </div>
         <div className="flex items-center gap-2">
           <Leaf className="w-6 not-sps:w-4 self-start shrink-0 text-[#768a20]"/>
-          <p className="w-fit text-[clamp(0.7rem,3vw,1rem)]">{tasteProfile}</p>
+          <p className="w-fit text-[clamp(0.7rem,3vw,1rem)] font-lato">{tasteProfile}</p>
         </div>
       </div>
     </div>
