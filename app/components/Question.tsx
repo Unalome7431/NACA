@@ -36,7 +36,7 @@ export const QuestionTitle = ({children}: {children: ReactNode}) => {
   return (
     <div className={`flex justify-between items-center gap-10 my-5`} onClick={toggle}>
       <p className="font-lato font-semibold text-2xl text-lime-900">{children}</p>
-      <ChevronRight className={`${isOpen && 'rotate-90'} transition-all duration-500 shrink-0 size-7 mr-3`} />
+      <ChevronRight className={`${isOpen && 'rotate-90'} transition-all duration-500 shrink-0 size-7`} />
     </div>
   )
 }
@@ -88,7 +88,7 @@ export const Question = ({ children, id, defaultOpen = false }: QuestionProps) =
     <QuestionContext.Provider value={{ isOpen, toggle }}>
       <div className={`flex flex-col transition-all duration-500 hover:bg-[#768a20]/15 cursor-pointer ${isOpen && 'bg-[#768a20]/20'}`}>
         <div className="w-full h-[3px] rounded bg-lime-900"></div>
-        <div className={``}>
+        <div className="mx-3">
           {children}
         </div>
       </div>
