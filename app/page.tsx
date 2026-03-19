@@ -147,7 +147,7 @@ export default function Home() {
             <Button variant="secondary" position="w-fit" icon={<Image src="/social/x.png" alt="X" width={30} height={30} className="p-1"/>} />
           </div>
         </div>
-        <div className="rounded h-[3px] bg-white"></div>
+        <div className="h-[3px] bg-white"></div>
         <div className="px-10 pt-5 pb-10 lg:pb-30 flex justify-center lg:justify-between not-hsm:justify-between select-none">
           <p className="text-white font-lato not-hsm:hidden">© 2026 NACA. All rights reserved. | <span className="hover:underline hover:cursor-pointer not-lg:underline">Privacy Policy</span> | <span className="hover:underline hover:cursor-pointer not-lg:underline">Terms of Service</span></p>
           <p className="text-white font-lato hsm:hidden">© 2026 NACA. All rights reserved.<br /><span className="underline">Privacy Policy</span><br /><span className="underline">Terms of Service</span></p>
