@@ -86,7 +86,7 @@ export const Question = ({ children, id, defaultOpen = false }: QuestionProps) =
 
   return (
     <QuestionContext.Provider value={{ isOpen, toggle }}>
-      <div className={`flex flex-col transition-all duration-500 hover:bg-[#768a20]/20 cursor-pointer ${isOpen && 'bg-[#768a20]/30'}`}>
+      <div className={`flex flex-col transition-all duration-500 hover:bg-[#768a20]/15 cursor-pointer ${isOpen && 'bg-[#768a20]/20'}`}>
         <div className="w-full h-[3px] rounded bg-lime-900"></div>
         <div className={``}>
           {children}
